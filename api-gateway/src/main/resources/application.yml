@@ -1,0 +1,24 @@
+server:
+  port: 8771
+
+spring:
+  application:
+    name: api-gateway
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+zuul:
+  ignored-services: /*
+  routes:
+    auth-service:
+      path: /auth/**
+      service-id: authentication-service
+      strip-prefix: true
+      sensitive-headers: Cookie,Set-Cookie

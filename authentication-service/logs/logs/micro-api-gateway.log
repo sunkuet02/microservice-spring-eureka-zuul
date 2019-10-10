@@ -1,0 +1,2 @@
+2019-10-10T15:14:42,672 INFO  (SpringApplication.java:648) - No active profile set, falling back to default profiles: default
+2019-10-10T15:14:51,817 INFO  (StartupInfoLogger.java:59) - Started MicroApiGateway in 13.054 seconds (JVM running for 15.706)

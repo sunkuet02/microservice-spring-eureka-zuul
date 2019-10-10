@@ -1,0 +1,68 @@
+{
+  "configuration": {
+    "name": "MicroApiGateway",
+    "properties": {
+      "property": [
+        {
+          "name": "log-path",
+          "value": "logs"
+        },
+        {
+          "name": "archive-path",
+          "value": "${log-path}/archive"
+        },
+        {
+          "name": "log-pattern",
+          "value": "%d{ISO8601} %-5p (%F:%L) - %m%n"
+        }
+      ]
+    },
+    "appenders": {
+      "Console": {
+        "name": "ConsoleAppender",
+        "target": "SYSTEM_OUT",
+        "follow": "true",
+        "PatternLayout": {
+          "pattern": "${log-pattern}"
+        }
+      },
+      "RollingFile": {
+        "name": "RollingFileLog",
+        "fileName": "${log-path}/micro-api-gateway.log",
+        "filePattern": "${archive-path}/micro-api-gateway.log-%d{yyyy-MM-dd}.log",
+        "PatternLayout": {
+          "pattern": "${log-pattern}"
+        },
+        "Policies": {
+          "TimeBasedTriggeringPolicy": {
+            "interval": "7",
+            "modulate": "true"
+          }
+        },
+        "DefaultRolloverStrategy": {
+          "max": "30"
+        }
+      }
+    },
+
+    "loggers": {
+      "logger": {
+        "name": "com.sunkuet02",
+        "level": "debug",
+        "additivity": "false",
+        "appender-ref": [
+          {
+            "ref": "RollingFileLog",
+            "level":"info"
+          }
+        ]
+      },
+      "root": {
+        "level": "info",
+        "appender-ref": {
+          "ref": "ConsoleAppender"
+        }
+      }
+    }
+  }
+}

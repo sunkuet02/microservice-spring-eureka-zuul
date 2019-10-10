@@ -1,0 +1,8 @@
+2019-10-10T15:04:34,274 INFO  (SpringApplication.java:648) - No active profile set, falling back to default profiles: default
+2019-10-10T15:04:45,284 INFO  (StartupInfoLogger.java:59) - Started MicroApiGateway in 15.05 seconds (JVM running for 18.036)
+2019-10-10T15:08:22,446 INFO  (SpringApplication.java:648) - No active profile set, falling back to default profiles: default
+2019-10-10T15:08:31,496 INFO  (StartupInfoLogger.java:59) - Started MicroApiGateway in 12.885 seconds (JVM running for 15.581)
+2019-10-10T15:16:40,913 INFO  (SpringApplication.java:648) - No active profile set, falling back to default profiles: default
+2019-10-10T15:16:50,015 INFO  (StartupInfoLogger.java:59) - Started MicroApiGateway in 13.464 seconds (JVM running for 16.315)
+2019-10-10T15:37:48,980 INFO  (SpringApplication.java:648) - No active profile set, falling back to default profiles: default
+2019-10-10T15:37:58,116 INFO  (StartupInfoLogger.java:59) - Started MicroApiGateway in 13.047 seconds (JVM running for 15.975)
