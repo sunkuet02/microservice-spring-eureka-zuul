@@ -1,6 +1,6 @@
 {
   "configuration": {
-    "name": "MicroApiGateway",
+    "name": "MicroAuthentication",
     "properties": {
       "property": [
         {
@@ -9,7 +9,7 @@
         },
         {
           "name": "log-file-name",
-          "value": "micro-api-gateway"
+          "value": "micro-authentication"
         },
         {
           "name": "archive-path",
